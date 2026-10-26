@@ -95,12 +95,6 @@ API runs at `http://localhost:5000`.
 | GET    | `/api/public/:slug`    | Public | Get a user's public profile + links (**cached**) |
 | GET    | `/api/r/:linkId`       | Public | Redirect to link's URL, increments click count  |
 
-### Example: Register
-```bash
-curl -X POST http://localhost:5000/api/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Deva","email":"deva@example.com","password":"secret123"}'
-```
 
 ### Example: Add a link (with JWT)
 ```bash
